@@ -1,0 +1,41 @@
+.error-section{
+  padding: 2rem 0;
+  text-align: center;
+  h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $primary;
+    text-transform: capitalize;
+  }
+  p{
+    font-size: 1rem;
+    color: $light;
+  }
+  a{
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $danger;
+    background-color: $secondary;
+  }
+  h5{
+    font-size: 1.2rem;
+    color: $primary;
+    text-transform: capitalize;
+  }
+  .address-card{
+    margin-top: 1rem;
+  }
+}
+
+.address-navigation-container{
+  flex-direction: column;
+  padding: 2rem 0;
+  h5,p{
+    margin-top: 1rem;
+  }
+}
