@@ -1,0 +1,156 @@
+.service-consultancy{
+  padding: 4rem 0;
+}
+
+.products{
+  background-color: $secondary;
+  padding: 4rem 0;
+  h2{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: $primary;
+  }
+  h2,p{
+    text-align: center;
+  }
+  p{
+    font-size: 1rem;
+    color: $light;
+  }
+  h4{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: $primary;
+    text-transform: capitalize;
+  }
+  .product-card-container{
+    margin-top: 2rem;
+  }
+  .product-card{
+    margin-top: 2rem;
+    text-align: left;
+    p{
+      text-align: left;
+    }
+    img{
+      width: 20%;
+    }
+  }
+  hr{
+    margin: 2rem 0;
+  }
+}
+.card-list-one, .card-list-two{
+  flex-direction: column;
+}
+
+.service-why-us{
+  flex-direction: column;
+}
+
+.awards{
+  padding: 4rem 0;
+  text-align: center;
+  h2{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+  .award-content-container{
+    flex-direction: column;
+  }
+  p{
+    color: $grey;
+  }
+  .award-content{
+    img{
+      width: 30%;
+    }
+    h3{
+      font-size: 1.6rem;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+    h3,p{
+      margin-top: 1rem;
+    }
+  }
+  .award-content, .award-image-container{
+    margin-top: 2rem;
+  }
+  .award-image-container{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (min-width:768px){
+  .card-list-one, .card-list-two{
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+      flex: 0 1 30%;
+    }
+  }
+  .products{
+    .product-card{
+      margin: 3rem 0;
+      img{
+        width: 30%;
+      }
+    }
+  }
+  .why-us{
+    padding: 4rem 0;
+    .container{
+      flex-direction: row;
+    }
+    .service-why-us{
+      align-items: center;
+      flex-direction: row;
+    }
+    h5{
+      font-size: 1rem;
+    }
+    .service-why-us{
+      flex: 0 1 78%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      h5{
+        flex: 0 1 20%;
+      }
+      p{
+        flex: 0 1 78%;
+      }
+    }
+
+    .service-btn{
+      flex: 0 1 20%;
+    }
+  }
+  .awards{
+    h2{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1.2rem;
+      color: $light;
+    }
+    .award-content-container{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .award-content-container div{
+      flex: 0 1 45%;
+    } 
+    .award-image-container{
+      align-self: stretch;
+      img{
+        height: 100%;
+      }
+    }
+  }
+}

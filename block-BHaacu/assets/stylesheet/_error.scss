@@ -1,0 +1,69 @@
+.error-section{
+  padding: 2rem 0;
+  text-align: center;
+  h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: $primary;
+    text-transform: capitalize;
+  }
+  p{
+    font-size: 1rem;
+    color: $light;
+  }
+  a{
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $danger;
+    background-color: $secondary;
+  }
+  h5{
+    font-size: 1.2rem;
+    color: $primary;
+    text-transform: capitalize;
+  }
+  .address-card{
+    margin-top: 1rem;
+  }
+}
+
+.address-navigation-container{
+  flex-direction: column;
+  padding: 2rem 0;
+  h5,p{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .error-section{
+    padding: 4rem;
+    h3{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+    a{
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  .address-navigation-container{
+    padding: 4rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+    .address-card{
+      flex: 0 1 30%;
+      font-size: 2rem;
+    }
+    h5{
+      font-size: 1.5rem;
+    }
+  }
+}
