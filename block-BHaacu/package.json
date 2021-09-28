@@ -4,11 +4,11 @@
   "description": "",
   "main": "",
   "scripts": {
-    "sass": "node-sass -w ./assets/stylesheet/styles.scss ./assets/stylesheet/styles.css"
+    "test": "jest --passWithNoTests"
   },
   "author": "AltCampus",
   "license": "GNU GPL V3",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "jest": "^26.0.1"
   }
 }

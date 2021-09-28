@@ -36,13 +36,24 @@
         </label>
         <input type="checkbox" name="toggle" id="toggle">
         <nav>
-          <ul>
+          <ul class="flex">
             <li>home</li>
             <li>about us</li>
             <li>services</li>
-            <li>pages</li>
-            <li>blog</li>
-            <li>conact us</li>
+            <li class="pages">pages <i class="fas fa-caret-down"></i>
+              <ul class="dropdown dropdown-one">
+                <li>pricing</li>
+                <li>portfolio</li>
+                <li>404 page</li>
+              </ul>
+            </li>
+            <li class="blog">blog <i class="fas fa-caret-down"></i>
+              <ul class="dropdown dropdown-two">
+                <li>blog</li>
+                <li>blog single</li>
+              </ul>
+            </li>
+            <li>contact us</li>
           </ul>
         </nav>
       </div>
@@ -107,16 +118,18 @@
       </div>
     </section>
     <section class="why-us">
-      <div class="container">
+      <div class="container flex">
         <div class="why-us-content">
           <h5>The best business consultancy services in world</h5>
           <p>There are many variations of passages of Lorem Ipsum available the mojority alteration</p>
         </div>
-        <button class="btn btn-secondary">request qoute</button>
+        <div>
+          <button class="btn btn-secondary">request quote</button>
+        </div>
       </div>
     </section>
     <section class="consultancy">
-      <div class="container">
+      <div class="container flex">
         <div class="consultancy-content">
           <h2>Industry leader in consulting services</h2>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi fugiat!</p>       
@@ -131,22 +144,22 @@
         <h2>our clients</h2>
         <div class="client-container flex">
           <div class="client-image-container">
-          <img src="./assets/media/fitbit.png" alt="client image">
-          </div>
-          <div class="client-image-container">
           <img src="./assets/media/spotify.png" alt="client image">
           </div>
           <div class="client-image-container">
           <img src="./assets/media/glasfit.png" alt="client image">
           </div>
           <div class="client-image-container">
-          <img src="./assets/media/fitbit.png" alt="client image" class="lg-display-img">
+          <img src="./assets/media/atlassian.png" alt="client image">
           </div>
           <div class="client-image-container">
-          <img src="./assets/media/fitbit.png" alt="client image" class="lg-display-img">
+          <img src="./assets/media/oracle.png" alt="client image" class="lg-display-img">
           </div>
           <div class="client-image-container">
-          <img src="./assets/media/fitbit.png" alt="client image" class="lg-display-img">
+          <img src="./assets/media/airbnb.png" alt="client image" class="lg-display-img">
+          </div>
+          <div class="client-image-container">
+          <img src="./assets/media/patio.png" alt="client image" class="lg-display-img">
           </div>
         </div>
       </div>
@@ -154,8 +167,8 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="navigation-footer">
-        <div>
+      <div class="navigation-footer flex">
+        <div class="col-lg">
           <h4>reach us</h4>
           <address>
             <p><i class="fas fa-location-arrow"></i> #123,Manhatt 7 Avenu, NYC</p>
@@ -163,7 +176,7 @@
             <p><i class="fas fa-envelope"></i> info@yourdomain.com</p>
           </address>
         </div>
-        <div>
+        <div class="col-sm">
           <h4>site links</h4>
           <ul>
             <li>home</li>
@@ -173,7 +186,7 @@
             <li>pricing</li>
           </ul>
         </div>
-        <div>
+        <div class="col-lg">
           <h4>quick links</h4>
           <ul>
             <li>blog</li>
@@ -182,7 +195,7 @@
             <li>terms & conditions</li>
           </ul>
         </div>
-        <div>
+        <div class="col-sm">
           <h4>follow us</h4>
           <ul class="flex">
             <li><i class="fab fa-facebook-f"></i></li>

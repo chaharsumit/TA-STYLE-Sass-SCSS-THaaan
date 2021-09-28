@@ -39,3 +39,31 @@
     margin-top: 1rem;
   }
 }
+
+@media screen and (min-width: 768px){
+  .error-section{
+    padding: 4rem;
+    h3{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+    a{
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  .address-navigation-container{
+    padding: 4rem 0;
+    justify-content: space-between;
+    flex-direction: row;
+    .address-card{
+      flex: 0 1 30%;
+      font-size: 2rem;
+    }
+    h5{
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -36,13 +36,24 @@
         </label>
         <input type="checkbox" name="toggle" id="toggle">
         <nav>
-          <ul>
+          <ul class="flex">
             <li>home</li>
             <li>about us</li>
             <li>services</li>
-            <li>pages</li>
-            <li>blog</li>
-            <li>conact us</li>
+            <li class="pages">pages <i class="fas fa-caret-down"></i>
+              <ul class="dropdown dropdown-one">
+                <li>pricing</li>
+                <li>portfolio</li>
+                <li>404 page</li>
+              </ul>
+            </li>
+            <li class="blog">blog <i class="fas fa-caret-down"></i>
+              <ul class="dropdown dropdown-two">
+                <li>blog</li>
+                <li>blog single</li>
+              </ul>
+            </li>
+            <li>contact us</li>
           </ul>
         </nav>
       </div>
@@ -57,9 +68,9 @@
     </section>
     <section class="consultancy">
       <div class="container">
-        <a href="#">about us</a>
-        <div class="cosultancy-container">
+        <div class="consultancy-container flex">
           <div class="consultancy-content">
+            <a href="#">about us</a>
             <h2>Industry leader in consulting services</h2>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eligendi fugiat!</p>       
           </div>
@@ -70,7 +81,7 @@
       </div>
     </section>
     <section class="about-mission">
-      <div class="container">
+      <div class="container flex">
         <div class="mission-image-container">
           <img src="./assets/media/vision.svg" alt="vision">
         </div>
@@ -109,7 +120,7 @@
       <div class="container">
         <h2>our team</h2>
         <p>We are ready to grow with your business.</p>
-        <div class="team-card-container">
+        <div class="team-card-container flex">
           <div class="team-card">
             <div class="team-card-image-container">
               <img src="./assets/media/team1.jpg" alt="team member" class="member-image">
@@ -184,8 +195,8 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="navigation-footer">
-        <div>
+      <div class="navigation-footer flex">
+        <div class="col-lg">
           <h4>reach us</h4>
           <address>
             <p><i class="fas fa-location-arrow"></i> #123,Manhatt 7 Avenu, NYC</p>
@@ -193,7 +204,7 @@
             <p><i class="fas fa-envelope"></i> info@yourdomain.com</p>
           </address>
         </div>
-        <div>
+        <div class="col-sm">
           <h4>site links</h4>
           <ul>
             <li>home</li>
@@ -203,7 +214,7 @@
             <li>pricing</li>
           </ul>
         </div>
-        <div>
+        <div class="col-lg">
           <h4>quick links</h4>
           <ul>
             <li>blog</li>
@@ -212,7 +223,7 @@
             <li>terms & conditions</li>
           </ul>
         </div>
-        <div>
+        <div class="col-sm">
           <h4>follow us</h4>
           <ul class="flex">
             <li><i class="fab fa-facebook-f"></i></li>

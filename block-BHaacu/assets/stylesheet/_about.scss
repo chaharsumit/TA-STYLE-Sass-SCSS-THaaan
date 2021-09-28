@@ -21,9 +21,15 @@
     text-transform: capitalize;
   }
 }
+.consultancy-container{
+  flex-direction: column;
+}
 
 .about-mission{
   padding: 3rem 0;
+  .container{
+    flex-direction: column;
+  }
 }
 .mission-image-container{
   img{
@@ -57,7 +63,9 @@
     }
   }
 }
-
+.team-card-container{
+  flex-direction: column;
+}
 .our-team{
   padding: 3rem 0;
   text-align: center;
@@ -100,4 +108,43 @@
 
 .solutions-about{
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px){
+  .about-hero{
+    padding: 4rem;
+    h1{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1.4rem;
+    }
+  }
+  .consultancy-container{
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+      flex: 0 1 48%;
+    }
+  }
+  .about-mission{
+    .container{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mission-cards{
+      flex: 0 1 60%;
+    }
+    .mission-image-container{
+      flex: 0 1 28%;
+    }
+  }
+  .team-card-container{
+    flex-direction: row;
+    justify-content: space-between;
+    .team-card{
+      flex: 0 1 23%;
+    }
+  }
 }
